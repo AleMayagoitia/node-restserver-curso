@@ -28,6 +28,11 @@ process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
 //********************
 let urlDB;
 
+//********************
+//Google client id
+//********************
+process.env.CLIENT_ID = process.env.CLIENT_ID || '56600888385-sf9slo3mbll7dcd9iukdfi92cjrho2du.apps.googleusercontent.com';
+
 if (process.env.NODE_ENV === "dev")
     urlDB = "mongodb://localhost:27017/cafe";
 else
