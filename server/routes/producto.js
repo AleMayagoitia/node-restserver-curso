@@ -137,7 +137,7 @@ app.put('/producto/:id', verificaToken, (req, res) => {
         productoDB.precioUni = body.precioUni;
         productoDB.categoria = body.categoria;
         productoDB.disponible = body.disponible;
-        productoDB.descripcion = body.descripcion;
+        productoDB.descripcion = body.descripcion
 
         productoDB.save((err, productoGuardado) => {
             if (err) {
